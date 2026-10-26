@@ -2,7 +2,7 @@
 
 Каталог окон, остеклений, душевых и подоконников: фильтры по категориям, карточки товаров, адаптивная вёрстка под телефон.
 
-**Демо:** https://elaborate-eclair-fd86f6.netlify.app
+**Сайт:** https://imran-php.github.io/okna-catalog/
 
 ## Стек
 HTML, CSS, JavaScript без фреймворков. Данные каталога лежат в `catalog-data.js`, логика в `app.js`, фото в `assets/` (WebP).
