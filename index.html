@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Окна большой страны. Остекление террас, стеклянные перила, душевые, перегородки, двери и козырьки, пластиковые окна и алюминиевые двери.">
   <meta name="color-scheme" content="light dark">
-  <title>Окна большой страны | Каталог стеклянных решений</title>
+  <title>Окна большой страны, каталог стеклянных решений</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap">
   <link rel="stylesheet" href="style.css">
   <script src="catalog-data.js" defer></script>
   <script src="app.js" defer></script>
@@ -17,35 +17,44 @@
   <a class="skip" href="#catalog">Перейти к каталогу</a>
   <header class="site-header">
     <div class="header-inner wrap">
-      <button class="menu-trigger" id="menu-trigger" aria-haspopup="dialog" aria-controls="category-menu" aria-expanded="false"><span class="menu-lines" aria-hidden="true"></span>Каталог</button>
-      <a class="brand" href="#top" aria-label="Окна большой страны, главная"><strong>ОКНА</strong><span>БОЛЬШОЙ СТРАНЫ</span></a>
+      <a class="brand wordmark" href="#top" aria-label="Окна большой страны, главная"><strong>ОКНА</strong><span>БОЛЬШОЙ СТРАНЫ</span></a>
+      <button class="menu-trigger" id="menu-trigger" type="button" aria-haspopup="dialog" aria-controls="category-menu" aria-expanded="false"><span class="menu-lines" aria-hidden="true"></span>Каталог</button>
       <a class="header-contact" data-manager-wa href="https://wa.me/79637000626" target="_blank" rel="noopener noreferrer" aria-label="Связаться с менеджером в WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a3.6 3.6 0 0 1-2-2l.8-1-1-2z"/></svg><span class="label">WhatsApp</span></a>
     </div>
   </header>
   <main id="top">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy"><p class="eyebrow">Стекло, окна и двери под ключ</p><h1 id="hero-title">Больше света.<br>Больше дома.</h1><p>Остекление террас, душевые, перегородки, пластиковые окна и алюминиевые двери для вашего пространства.</p><div class="hero-actions"><a class="button" href="#catalog">Смотреть каталог</a><a class="button ghost" href="#directions">Все направления</a></div><div class="hero-stats"><div><strong id="stat-categories">7</strong><span>направлений</span></div><div><strong id="stat-products">31</strong><span>готовый вариант</span></div><div><strong id="stat-photos">48</strong><span>фото объектов</span></div></div></div>
-      <div class="hero-photo"><img src="assets/08.webp" alt="Остекление угловой террасы со светлым каменным фасадом" width="1672" height="941" fetchpriority="high"></div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">Больше света. Больше дома.</h1>
+          <p class="lead">Стекло, окна и двери под ключ: остекление террас, душевые, перегородки, пластиковые окна и алюминиевые двери.</p>
+          <div class="hero-actions"><a class="button" href="#catalog">Смотреть каталог</a><a class="text-link" href="#directions">Все направления</a></div>
+          <dl class="hero-stats"><div><dt id="stat-categories">7</dt><dd>направлений</dd></div><div><dt id="stat-products">31</dt><dd>готовый вариант</dd></div><div><dt id="stat-photos">48</dt><dd>фото объектов</dd></div></dl>
+        </div>
+        <figure class="hero-photo"><img src="assets/08.webp" alt="Остекление угловой террасы со светлым каменным фасадом" width="1672" height="941" fetchpriority="high"><figcaption>Угловая терраса, стекло в пол</figcaption></figure>
+      </div>
     </section>
-    <section id="directions" class="directions wrap" aria-labelledby="directions-title"><div class="section-head"><div><p class="kicker">Направления</p><h2 id="directions-title">Что мы делаем</h2></div></div><div id="category-tiles" class="tile-grid"></div></section>
-    <section id="catalog" class="catalog wrap" aria-labelledby="catalog-title">
-      <div class="catalog-heading"><p class="kicker" id="catalog-context">Каталог решений</p><h2 id="catalog-title" tabindex="-1">Все решения</h2><p id="catalog-description">Выберите форму, отделку и детали, которые подходят вашему пространству.</p></div>
-      <div class="chip-bar"><div id="category-chips" class="chips" role="toolbar" aria-label="Фильтр по категориям"></div></div>
-      <div class="catalog-status"><span id="result-count" role="status"></span><button id="reset-category" class="text-button" hidden>← Все решения</button></div>
-      <div id="products" class="product-grid"></div>
-      <noscript><p>Включите JavaScript, чтобы открыть каталог и галереи фотографий.</p></noscript>
+    <section id="directions" class="directions" aria-labelledby="directions-title"><div class="wrap"><div class="section-head"><h2 id="directions-title">Что мы делаем</h2><p class="lead">От перил и душевых до остекления целой террасы.</p></div><div id="category-tiles" class="tile-grid"></div></div></section>
+    <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+      <div class="wrap">
+        <div class="catalog-heading"><h2 id="catalog-title" tabindex="-1">Все решения</h2><p class="catalog-context" id="catalog-context">Каталог решений</p><p class="lead" id="catalog-description">Выберите форму, отделку и детали, которые подходят вашему пространству.</p></div>
+        <div class="chip-bar"><div id="category-chips" class="chips" role="toolbar" aria-label="Фильтр по категориям"></div></div>
+        <div class="catalog-status"><span id="result-count" role="status"></span><button id="reset-category" class="text-button" type="button" hidden>Все решения</button></div>
+        <div id="products" class="product-grid"></div>
+        <noscript><p>Включите JavaScript, чтобы открыть каталог и галереи фотографий.</p></noscript>
+      </div>
     </section>
-    <section class="catalog-note wrap"><p>Внешний вид, материалы, размеры и комплектация уточняются для конкретного заказа.</p></section>
+    <section class="catalog-note"><div class="wrap"><p>Внешний вид, материалы, размеры и комплектация уточняются для конкретного заказа.</p></div></section>
   </main>
-  <footer class="footer wrap"><a class="brand" href="#top" aria-label="Вернуться наверх"><strong>ОКНА</strong><span>БОЛЬШОЙ СТРАНЫ</span></a><div class="footer-contact"><a data-manager-wa href="https://wa.me/79637000626" target="_blank" rel="noopener noreferrer" aria-label="Написать менеджеру в WhatsApp на номер +7 963 700-06-26">+7 963 700-06-26<span>Менеджер в WhatsApp</span></a><p>Ознакомительный каталог</p></div></footer>
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand wordmark" href="#top" aria-label="Вернуться наверх"><strong>ОКНА</strong><span>БОЛЬШОЙ СТРАНЫ</span></a><div class="footer-contact"><a data-manager-wa href="https://wa.me/79637000626" target="_blank" rel="noopener noreferrer" aria-label="Написать менеджеру в WhatsApp на номер +7 963 700-06-26">+7 963 700-06-26<span>Менеджер в WhatsApp</span></a><p>Ознакомительный каталог</p></div></div></footer>
   <dialog class="category-menu" id="category-menu" aria-labelledby="menu-title">
-    <div class="menu-header"><h2 id="menu-title">Каталог</h2><button class="close-button" data-close aria-label="Закрыть меню"><span aria-hidden="true">×</span></button></div>
+    <div class="menu-header"><h2 id="menu-title">Каталог</h2><button class="close-button" type="button" data-close aria-label="Закрыть меню"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
     <nav id="category-list" aria-label="Разделы каталога"></nav>
     <p class="menu-note">Остекление и детали, которые делают дом светлее.</p>
   </dialog>
   <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-title">
-    <div class="dialog-bar"><span id="gallery-category"></span><button class="close-button" data-close aria-label="Закрыть описание"><span aria-hidden="true">×</span></button></div>
-    <div class="detail-layout"><div class="gallery"><div class="gallery-stage"><img id="gallery-image" alt=""></div><div class="gallery-controls"><button id="gallery-prev" aria-label="Предыдущая фотография">Назад</button><span id="gallery-count" aria-live="polite"></span><button id="gallery-next" aria-label="Следующая фотография">Дальше</button></div><div id="gallery-thumbnails" class="gallery-thumbnails" aria-label="Фотографии варианта"></div></div><div class="detail-copy"><h2 id="product-title"></h2><p id="product-description"></p><dl id="product-properties"></dl><a class="button" id="product-whatsapp" href="https://wa.me/79637000626" target="_blank" rel="noopener noreferrer">Заказать в WhatsApp</a><p class="small-note">Название и исполнение выбранного варианта уже будут в сообщении. Размеры и детали заказа можно обсудить с менеджером.</p></div></div>
+    <div class="dialog-bar"><span id="gallery-category"></span><button class="close-button" type="button" data-close aria-label="Закрыть описание"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="detail-layout"><div class="gallery"><div class="gallery-stage"><img id="gallery-image" alt=""></div><div class="gallery-controls"><button id="gallery-prev" type="button" aria-label="Предыдущая фотография">Назад</button><span id="gallery-count" aria-live="polite"></span><button id="gallery-next" type="button" aria-label="Следующая фотография">Дальше</button></div><div id="gallery-thumbnails" class="gallery-thumbnails" aria-label="Фотографии варианта"></div></div><div class="detail-copy"><h2 id="product-title"></h2><p id="product-description"></p><dl id="product-properties"></dl><a class="button" id="product-whatsapp" href="https://wa.me/79637000626" target="_blank" rel="noopener noreferrer">Заказать в WhatsApp</a><p class="small-note">Название и исполнение выбранного варианта уже будут в сообщении. Размеры и детали заказа можно обсудить с менеджером.</p></div></div>
   </dialog>
 </body>
 </html>
